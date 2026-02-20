@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.env.local
+
+# Model weights and data
+*.h5
+*.weights.h5
+app_data/
+
+# Model files - IMPORTANT: Keep yolov5su.pt in repo!
+# *.pt would exclude the required YOLO model
+# Only exclude dynamically generated .pt files if needed
+
+# Temporary files
+*.log
+*.tmp
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.pytype/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flask
+instance/
+.webassets-cache
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Keras
+.keras/
+
+# Ultralytics
+ultralytics/

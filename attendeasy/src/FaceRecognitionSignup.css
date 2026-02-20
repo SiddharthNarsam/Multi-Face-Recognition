@@ -1,0 +1,39 @@
+/* FaceRecognitionSignup.css */
+
+.navbar {
+  padding: 0.5rem 1rem; /* Decrease navbar height */
+}
+
+.navbar-button {
+  border: 2px solid white; /* Add border to navbar buttons */
+  border-radius: 5px; /* Add border radius for interactivity */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Change background on hover */
+}
+
+.signup-box {
+  border: 2px solid #007bff; /* Add border to signup box */
+  border-radius: 8px; /* Rounded corners for signup box */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box input {
+  border: 1px solid #007bff; /* Customize input border */
+}
+
+.signup-box button {
+  border: 2px solid #007bff; /* Add border to signup button */
+}
+
+.signup-box button:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Change background on hover */
+}
+
+/* Adjust margins to decrease gap between buttons and signup box */
+button {
+  margin-top: 10px; /* Adjust this value to change the gap */
+}
