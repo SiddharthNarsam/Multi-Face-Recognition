@@ -38,31 +38,39 @@ signup, login, attendance views, and a crowd-counting screen.
 Create a virtual environment and install dependencies:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install flask flask-cors flask-pymongo mtcnn keras-facenet ultralytics tensorflow scikit-learn opencv-python numpy
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-Configure MongoDB in `app.py` by setting `app.config["MONGO_URI"]` to your URI.
-If you want to keep secrets out of code, move this value to an environment
-variable and load it before starting the app.
+Copy the environment example and configure your MongoDB URI:
+
+```powershell
+copy .env.example .env
+```
+
+Edit `.env` and set your `MONGO_URI` (local MongoDB or Atlas).
 
 Start the API:
 
 ```powershell
-$env:FLASK_APP="app.py"
-flask run --host 0.0.0.0 --port 5000
+python app.py
 ```
 
-Note: `app.py` expects a YOLO weights filename of `yolov5s.pt`. Either rename
-`yolov5su.pt` or update the path in `app.py` to match your file.
+Note: `yolov5su.pt` must be present in the `Backend/` folder (it is included in the repo).
 
 ### Frontend (React)
 
-Set the API base URL in `.env`:
+Copy the environment example and set the backend URL:
+
+```powershell
+copy .env.example .env
+```
+
+The `.env` file should contain:
 
 ```
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_LOCAL_HOST_API_URL=http://localhost:5000
 ```
 
 Install and run:

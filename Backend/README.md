@@ -70,7 +70,21 @@ This prevents build errors with packages like TensorFlow, scikit-learn, and Open
 
 ---
 
-## 4. Install Project Dependencies
+## 4. Configure Environment & MongoDB
+
+Copy the example environment file:
+
+```bash
+copy .env.example .env
+```
+
+Make sure MongoDB is running locally (default: `mongodb://localhost:27017`), or update `MONGO_URI` in `.env` with your Atlas connection string.
+
+If MongoDB is not installed: https://www.mongodb.com/try/download/community
+
+---
+
+## 5. Install Project Dependencies
 
 Install all required packages from `requirements.txt`:
 
@@ -80,7 +94,7 @@ python -m pip install -r requirements.txt
 
 ---
 
-## 5. Verify Installation
+## 6. Verify Installation
 
 Run this command to confirm core modules are working:
 
@@ -96,7 +110,7 @@ All core modules OK
 
 ---
 
-## 6. Run the Application
+## 7. Run the Application
 
 Start the backend server:
 
